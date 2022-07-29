@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <div id="display">
+                <small>Your formatted text:</small>
+                <p class="displayView" data-bind="text: displayView"></p>
+            </div>
+        
+            <div id="container">
+                <input type="text" data-bind="value: displayView" >
+            </div>
+        
+            <div id="commands">
+                <button data-bind="click: toUpperCase">Uppercase</button>
+                <button data-bind="click: toLowerCase">Lowercase</button>
+                <button data-bind="click: capitalize">Capitalize</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type='text/javascript' src='./js/knockout/knockout-3.5.1.js'></script>
+    <script type='text/javascript' src='./js/script.js'></script>
+</body>
+</html>
