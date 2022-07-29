@@ -11,7 +11,7 @@ function AppViewModel() {
     this.capitalize = function() {
         let currentText = this.displayView(),
             letterCapitalized = currentText.charAt(0).toUpperCase(),
-            theRestOfText = currentText.slice(1)
+            theRestOfText = currentText.slice(1).toLowerCase()
 
         this.displayView(letterCapitalized + theRestOfText)
     }
